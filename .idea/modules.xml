@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/LinkedList/LinkedList.iml" filepath="$PROJECT_DIR$/LinkedList/LinkedList.iml" />
       <module fileurl="file://$PROJECT_DIR$/Queue/Queue.iml" filepath="$PROJECT_DIR$/Queue/Queue.iml" />
       <module fileurl="file://$PROJECT_DIR$/Stack/Stack.iml" filepath="$PROJECT_DIR$/Stack/Stack.iml" />
+      <module fileurl="file://$PROJECT_DIR$/beautifun-of-algorithmay/beautifun-of-algorithmay.iml" filepath="$PROJECT_DIR$/beautifun-of-algorithmay/beautifun-of-algorithmay.iml" />
     </modules>
   </component>
 </project>
