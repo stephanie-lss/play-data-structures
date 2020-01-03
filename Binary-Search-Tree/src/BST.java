@@ -1,3 +1,7 @@
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Stack;
+
 /**
  * @author LiSheng
  * @date 2020/1/2 21:13
@@ -78,6 +82,24 @@ public class BST<E extends Comparable<E>> {
         preOrder(node.right);
     }
 
+    /**
+     * 二分搜索树的前序遍历非递归算法
+     */
+    public void preOrderNR() {
+        Stack<Node> stack = new Stack<>();
+        stack.push(root);
+        while (!stack.isEmpty()) {
+            Node node = stack.pop();
+            if (node.right != null) {
+                stack.push(node.right);
+            }
+            if (node.left != null) {
+                stack.push(node.left);
+            }
+            System.out.print(node.e);
+        }
+    }
+
     public void inOrder() {
         inOrder(root);
     }
@@ -98,20 +120,109 @@ public class BST<E extends Comparable<E>> {
 
     /**
      * 后序遍历以node为根的二分搜索树，递归算法
-     *
-     * @param node
      */
-    public void postOrder(){
+    public void postOrder() {
         postOrder(root);
     }
 
     private void postOrder(Node node) {
-        if (node == null){
+        if (node == null) {
             return;
         }
         postOrder(node.left);
         postOrder(node.right);
         System.out.print(node.e);
+    }
+
+    /**
+     * 层序遍历二分搜索树，非递归算法
+     */
+    public void levelOrderNR() {
+        Queue<Node> queue = new LinkedList<>();
+        queue.add(root);
+        while (!queue.isEmpty()) {
+            Node cur = queue.remove();
+            System.out.print(cur.e);
+            if (cur.left != null) {
+                queue.add(cur.left);
+            }
+            if (cur.right != null) {
+                queue.add(cur.right);
+            }
+        }
+    }
+
+    public E minmum() {
+        if (size == 0) {
+            throw new IllegalArgumentException("BST is empty");
+        }
+        return minmum(root).e;
+    }
+
+    /**
+     * 返回以node为根节点的二分搜素树的最小节点元素e，递归算法
+     *
+     * @param node
+     * @return
+     */
+    private Node minmum(Node node) {
+        if (node.left == null) {
+            return node;
+        }
+
+        return minmum(node.left);
+    }
+
+    /**
+     * 返回以node为根节点的二分搜素树的最小节点元素e，非递归算法
+     *
+     * @return
+     */
+    public E minmumNR() {
+        if (size == 0) {
+            throw new IllegalArgumentException("BST is empty.");
+        }
+        Node cur = root;
+        while (cur.left != null) {
+            cur = cur.left;
+        }
+        return cur.e;
+    }
+
+    public E maxmum() {
+        if (size == 0) {
+            throw new IllegalArgumentException("BST is empty");
+        }
+        return maxmum(root).e;
+    }
+
+    /**
+     * 返回以node为根节点的二分搜素树的最大节点元素e
+     *
+     * @param node
+     * @return
+     */
+    private Node maxmum(Node node) {
+        if (node.right == null) {
+            return node;
+        }
+        return maxmum(node.right);
+    }
+
+    /**
+     * 返回以node为根节点的二分搜素树的最大节点元素e，非递归算法
+     *
+     * @return
+     */
+    public E maxmumNR() {
+        if (size == 0) {
+            throw new IllegalArgumentException("BST is empty.");
+        }
+        Node cur = root;
+        while (cur.right != null) {
+            cur = cur.right;
+        }
+        return cur.e;
     }
 
     public void add(E e) {
@@ -153,6 +264,158 @@ public class BST<E extends Comparable<E>> {
             node.right = add(node.right, e);
         }
         return node;
+    }
+
+    /**
+     * 从二分搜索树中删除最小值所在节点，返回最小值
+     *
+     * @return
+     */
+    public E removeMin() {
+        E ret = minmum();
+        root = removeMin(root);
+        return ret;
+    }
+
+    /**
+     * 删除掉以node为根的二分搜索树的最小节点
+     * 返回删除节点后新的二分搜索树的根
+     *
+     * @param node
+     * @return
+     */
+    private Node removeMin(Node node) {
+        if (node.left == null) {
+            Node rightNode = node.right;
+            node.right = null;
+            size--;
+            return rightNode;
+        }
+        node.left = removeMin(node.left);
+        return node;
+    }
+
+    /**
+     * 从二分搜索树中删除最大值所在节点，返回最大值
+     *
+     * @return
+     */
+    public E removeMax() {
+        E ret = maxmum();
+        root = removeMax(root);
+        return ret;
+    }
+
+    /**
+     * 删除掉以node为根的二分搜索树的最大节点
+     * 返回删除节点后新的二分搜索树的根
+     *
+     * @param node
+     * @return
+     */
+    private Node removeMax(Node node) {
+        if (node.right == null) {
+            Node leftNode = node.left;
+            node.left = null;
+            size--;
+            return leftNode;
+        }
+        node.right = removeMax(node.right);
+        return node;
+    }
+
+    /**
+     * 从二分搜索树中删除元素为e的节点
+     *
+     * @param e
+     */
+    public void remove(E e) {
+        root = remove(root, e);
+    }
+
+    /**
+     * 删掉以node为根的二分搜索树中值为e的节点，递归算法
+     * 返回删除节点后新的二分搜索树的根
+     *
+     * @param node
+     * @param e
+     */
+    private Node remove(Node node, E e) {
+        if (node == null) {
+            return null;
+        }
+        if (e.compareTo(node.e) < 0) {
+            node.left = remove(node.left, e);
+            return node;
+        } else if (e.compareTo(node.e) > 0) {
+            node.right = remove(node.right, e);
+            return node;
+        } else {
+            if (node.left == null) {
+                Node rightNode = node.right;
+                node.right = null;
+                size--;
+                return rightNode;
+            } else if (node.right == null) {
+                Node leftNode = node.left;
+                node.left = null;
+                size--;
+                return leftNode;
+
+            } else {
+                Node successor = minmum(node.right);
+                successor.right = removeMin(node.right);
+                //因为removeMin中的size--了，但其实这个最小节点并没有被删除，
+                //successor保存了该节点的内存地址
+                size++;
+                successor.left = node.left;
+                node.left = null;
+                node.right = null;
+                //原本的根节点node被删除了，因此需要size--
+                size--;
+                return successor;
+            }
+        }
+    }
+
+    /**
+     * 删掉以node为根的二分搜索树中值为e的节点，递归算法
+     * 返回删除节点后新的二分搜索树的根
+     *
+     * @param node
+     * @param e
+     */
+    private Node removePre(Node node, E e) {
+        if (node == null) {
+            return null;
+        }
+        if (e.compareTo(node.e) < 0) {
+            node.left = removePre(node.left, e);
+            return node;
+        } else if (e.compareTo(node.e) > 0) {
+            node.right = removePre(node.right, e);
+            return node;
+        } else {
+            if (node.left == null) {
+                Node rightNode = node.right;
+                node.right = null;
+                size--;
+                return rightNode;
+            }
+            if (node.right == null) {
+                Node leftNode = node.left;
+                node.left = null;
+                size--;
+                return leftNode;
+            }
+            Node predecessor = maxmum(node.left);
+            predecessor.left = removeMax(node.left);
+            size++;
+            predecessor.right = node.right;
+            node.right = node.left = null;
+            size--;
+            return predecessor;
+        }
     }
 
     @Override
