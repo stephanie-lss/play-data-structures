@@ -426,7 +426,7 @@ public class BST<E extends Comparable<E>> {
 
     /**
      * 寻找以node为根的二叉搜索树中比数字num小的最大值
-     *
+     * 返回floor节点
      * @param node
      * @param num
      * @return

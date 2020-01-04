@@ -2,35 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c143bccd-87d8-47e8-87fa-a83e0e80338d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeetCode/src/com/TreeNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeetCode/src/com/solution100/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeetCode/src/com/solution104/BinaryTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeetCode/src/com/solution104/Node.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeetCode/src/com/solution104/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeetCode/src/com/solution938/BinaryTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeetCode/src/com/solution938/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Set/Set.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Set/src/BSTSet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Set/src/Set.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/LeetCode/com/TreeNode.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/LeetCode/com/solution100/Solution.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/LeetCode/com/solution104/BinaryTree.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/LeetCode/com/solution104/Node.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/LeetCode/com/solution104/Solution.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/LeetCode/com/solution938/BinaryTree.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/LeetCode/com/solution938/Solution.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Set/BSTSet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Set/Set.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Map/Map.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Binary-Search-Tree/src/BST.java" beforeDir="false" afterPath="$PROJECT_DIR$/Binary-Search-Tree/src/BST.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary-Search-Tree/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Binary-Search-Tree/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LeetCode/LeetCode.iml" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/LeetCode.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinkedList/src/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/LinkedList/src/LinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Binary-Search-Tree/BST$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Binary-Search-Tree/BST$Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Binary-Search-Tree/BST.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Binary-Search-Tree/BST.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Binary-Search-Tree/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Binary-Search-Tree/Main.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -51,40 +26,41 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Set/src/LinkedListSet.java">
+        <entry file="file://$PROJECT_DIR$/Binary-Search-Tree/src/BST.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="144">
-              <caret line="8" column="11" lean-forward="true" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+              <caret line="331" column="31" selection-start-line="331" selection-start-column="31" selection-end-line="331" selection-end-column="31" />
               <folding>
-                <element signature="e#160#161#0" expanded="true" />
-                <element signature="e#201#202#0" expanded="true" />
-                <element signature="e#366#367#0" expanded="true" />
-                <element signature="e#403#404#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#559#560#0" expanded="true" />
+                <element signature="e#586#587#0" expanded="true" />
+                <element signature="e#6695#6696#0" expanded="true" />
+                <element signature="e#6733#6734#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LinkedList/src/LinkedList.java">
+        <entry file="file://$PROJECT_DIR$/Map/src/BSTMap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="216" column="35" lean-forward="true" selection-start-line="216" selection-start-column="35" selection-end-line="216" selection-end-column="35" />
+            <state relative-caret-position="108">
+              <caret line="6" column="21" lean-forward="true" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
               <folding>
-                <element signature="e#3725#3726#0" expanded="true" />
-                <element signature="e#3757#3758#0" expanded="true" />
-                <element signature="e#4174#4175#0" expanded="true" />
-                <element signature="e#4217#4218#0" expanded="true" />
+                <element signature="class#Node#0;class#BSTMap#0" />
+                <element signature="e#3989#3990#0" expanded="true" />
+                <element signature="e#4459#4460#0" expanded="true" />
+                <element signature="e#4537#4538#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/LeetCode/src/com/solution804/Solution.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LeetCode/src/com/solution349/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="17" column="26" lean-forward="true" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+            <state relative-caret-position="198">
+              <caret line="11" column="27" lean-forward="true" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -93,19 +69,71 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LinkedList/src/Main2.java">
+        <entry file="file://$PROJECT_DIR$/LeetCode/src/com/solution350/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="13" column="29" lean-forward="true" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+            <state relative-caret-position="684">
+              <caret line="38" column="1" lean-forward="true" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/LeetCode/src/com/solution350/Solution2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="22" column="36" lean-forward="true" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Set/src/Main.java">
+        <entry file="jar://D:/Java/jdk1.8.0_191/src.zip!/java/util/ArrayList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="3" lean-forward="true" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+            <state relative-caret-position="224">
+              <caret line="378" column="20" selection-start-line="378" selection-start-column="20" selection-end-line="378" selection-end-column="20" />
+              <folding>
+                <element signature="e#13713#13714#0" expanded="true" />
+                <element signature="e#13768#13769#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://D:/Java/jdk1.8.0_191/src.zip!/java/util/HashSet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="458">
+              <caret line="148" column="70" lean-forward="true" selection-start-line="148" selection-start-column="70" selection-end-line="148" selection-end-column="70" />
+              <folding>
+                <element signature="e#3740#3741#0" expanded="true" />
+                <element signature="e#3777#3778#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Map/src/LinkedListMap.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="39" column="22" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
+              <folding>
+                <element signature="class#Node#0;class#LinkedListMap#0" />
+                <element signature="e#361#362#0" expanded="true" />
+                <element signature="e#406#407#0" expanded="true" />
+                <element signature="e#616#617#0" expanded="true" />
+                <element signature="e#688#689#0" expanded="true" />
+                <element signature="e#2398#2399#0" expanded="true" />
+                <element signature="e#2425#2426#0" expanded="true" />
+                <element signature="e#2471#2472#0" expanded="true" />
+                <element signature="e#2503#2504#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -157,7 +185,6 @@
         <option value="$PROJECT_DIR$/LeetCode/src/com/solution104/Node.java" />
         <option value="$PROJECT_DIR$/LeetCode/src/com/solution104/BinaryTree.java" />
         <option value="$PROJECT_DIR$/LeetCode/src/com/solution104/Solution.java" />
-        <option value="$PROJECT_DIR$/Binary-Search-Tree/src/BST.java" />
         <option value="$PROJECT_DIR$/Binary-Search-Tree/src/Main.java" />
         <option value="$PROJECT_DIR$/LeetCode/src/com/Node.java" />
         <option value="$PROJECT_DIR$/LeetCode/src/com/TreeNode.java" />
@@ -171,6 +198,15 @@
         <option value="$PROJECT_DIR$/Set/src/Main.java" />
         <option value="$PROJECT_DIR$/LinkedList/src/LinkedList.java" />
         <option value="$PROJECT_DIR$/LeetCode/src/com/solution804/Solution.java" />
+        <option value="$PROJECT_DIR$/Map/src/Map.java" />
+        <option value="$PROJECT_DIR$/Binary-Search-Tree/src/BST.java" />
+        <option value="$PROJECT_DIR$/Map/src/BSTMap.java" />
+        <option value="$PROJECT_DIR$/Map/Main.java" />
+        <option value="$PROJECT_DIR$/Map/src/LinkedListMap.java" />
+        <option value="$PROJECT_DIR$/Map/src/Main.java" />
+        <option value="$PROJECT_DIR$/LeetCode/src/com/solution349/Solution.java" />
+        <option value="$PROJECT_DIR$/LeetCode/src/com/solution350/Solution.java" />
+        <option value="$PROJECT_DIR$/LeetCode/src/com/solution350/Solution2.java" />
       </list>
     </option>
   </component>
@@ -193,8 +229,8 @@
     <option name="vmOptions" value="-DarchetypeCatalog=internal -Dfile.encoding=GB2312" />
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="795" />
-    <option name="y" value="104" />
+    <option name="x" value="-8" />
+    <option name="y" value="32" />
     <option name="width" value="1146" />
     <option name="height" value="1087" />
   </component>
@@ -224,6 +260,22 @@
             </path>
             <path>
               <item name="data-structures" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeetCode" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="solution350" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="data-structures" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Map" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="data-structures" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Map" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="data-structures" type="b2602c69:ProjectViewProjectNode" />
               <item name="Set" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -244,7 +296,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../play data-structures-branch" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Map" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -261,18 +313,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.solution350" />
+      <recent name="" />
       <recent name="com.solution938" />
       <recent name="com" />
       <recent name="com.solution104" />
-      <recent name="com.solution876" />
-      <recent name="com.solution21" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Github\play data-structures\Map" />
       <recent name="F:\Github\play data-structures\LeetCode\src" />
       <recent name="F:\Github\play data-structures\Queue\src" />
       <recent name="F:\Github\play data-structures\LinkedList\src" />
       <recent name="F:\Github\play data-structures\Stack\src" />
-      <recent name="F:\Github\play data-structures\Array\src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -287,7 +339,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Solution (2)">
+  <component name="RunManager" selected="Application.Solution2">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Set" />
@@ -295,9 +347,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="Binary-Search-Tree" />
+      <module name="Map" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -305,19 +357,6 @@
     <configuration name="Main2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main2" />
       <module name="LinkedList" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Solution (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.solution938.Solution" />
-      <module name="LeetCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.solution938.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -335,13 +374,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Solution2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.solution350.Solution2" />
+      <module name="LeetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.solution350.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Solution2" />
+        <item itemvalue="Application.Main (2)" />
         <item itemvalue="Application.Solution (2)" />
         <item itemvalue="Application.Main2" />
         <item itemvalue="Application.Main (1)" />
-        <item itemvalue="Application.Solution (1)" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -356,16 +408,15 @@
       <option name="presentableId" value="Default" />
       <updated>1577867465595</updated>
       <workItem from="1577867469822" duration="53653000" />
-      <workItem from="1578103648678" duration="18712000" />
+      <workItem from="1578103648678" duration="28009000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72365000" />
+    <option name="totallyTimeSpent" value="81662000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="32" width="1936" height="1176" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.086538464" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -376,8 +427,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3297975" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32497588" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.32786885" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3548698" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.32786885" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -417,6 +468,12 @@
           <properties />
           <option name="timeStamp" value="33" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/LeetCode/src/com/solution350/Solution2.java</url>
+          <line>16</line>
+          <properties />
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
@@ -427,75 +484,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://D:/Java/jdk1.8.0_191/src.zip!/java/util/LinkedList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="240" column="21" selection-start-line="240" selection-start-column="13" selection-end-line="240" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Java/jdk1.8.0_191/src.zip!/java/util/ArrayList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-288">
-          <caret line="177" column="19" selection-start-line="177" selection-start-column="8" selection-end-line="177" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/beautifun-of-algorithmay/src/ListNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
-          <folding>
-            <element signature="e#130#131#0" expanded="true" />
-            <element signature="e#153#154#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LeetCode/src/com/solution21.java" />
-    <entry file="file://$PROJECT_DIR$/beautifun-of-algorithmay/src/链表法判断回文字符串.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
-          <folding>
-            <element signature="e#166#167#0" expanded="true" />
-            <element signature="e#189#190#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LeetCode/src/com/solution21/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LeetCode/src/com/solution876/ListNode.java" />
-    <entry file="file://$PROJECT_DIR$/LeetCode/src/com/solution876/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LeetCode/src/com/solution237/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" selection-start-line="12" selection-end-line="21" selection-end-column="1" />
-          <folding>
-            <element signature="e#427#428#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LeetCode/src/com/solution206/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LeetCode/src/com/solution21/ListNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -746,18 +734,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Binary-Search-Tree/src/BST.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-300">
-          <caret line="226" column="16" selection-start-line="226" selection-start-column="16" selection-end-line="226" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#559#560#0" expanded="true" />
-            <element signature="e#586#587#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Set/src/BSTSet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -797,34 +773,31 @@
     <entry file="file://$PROJECT_DIR$/Set/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="5" column="3" lean-forward="true" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Set/src/LinkedListSet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="11" lean-forward="true" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
-          <folding>
-            <element signature="e#160#161#0" expanded="true" />
-            <element signature="e#201#202#0" expanded="true" />
-            <element signature="e#366#367#0" expanded="true" />
-            <element signature="e#403#404#0" expanded="true" />
-          </folding>
+          <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LinkedList/src/Main2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
-          <caret line="13" column="29" lean-forward="true" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+          <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LeetCode/src/com/solution804/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LinkedList/src/LinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="216" column="35" lean-forward="true" selection-start-line="216" selection-start-column="35" selection-end-line="216" selection-end-column="35" />
+        <state relative-caret-position="162">
+          <caret line="12" column="29" lean-forward="true" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
           <folding>
             <element signature="e#3725#3726#0" expanded="true" />
             <element signature="e#3757#3758#0" expanded="true" />
@@ -834,10 +807,131 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LeetCode/src/com/solution804/Solution.java">
+    <entry file="file://$PROJECT_DIR$/Set/src/LinkedListSet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="26" lean-forward="true" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+        <state relative-caret-position="144">
+          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+          <folding>
+            <element signature="e#160#161#0" expanded="true" />
+            <element signature="e#201#202#0" expanded="true" />
+            <element signature="e#366#367#0" expanded="true" />
+            <element signature="e#403#404#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Map/src/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Map/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="41" lean-forward="true" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Map/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="35" lean-forward="true" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Binary-Search-Tree/src/BST.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="331" column="31" selection-start-line="331" selection-start-column="31" selection-end-line="331" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#559#560#0" expanded="true" />
+            <element signature="e#586#587#0" expanded="true" />
+            <element signature="e#6695#6696#0" expanded="true" />
+            <element signature="e#6733#6734#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Map/src/LinkedListMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="39" column="22" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
+          <folding>
+            <element signature="class#Node#0;class#LinkedListMap#0" />
+            <element signature="e#361#362#0" expanded="true" />
+            <element signature="e#406#407#0" expanded="true" />
+            <element signature="e#616#617#0" expanded="true" />
+            <element signature="e#688#689#0" expanded="true" />
+            <element signature="e#2398#2399#0" expanded="true" />
+            <element signature="e#2425#2426#0" expanded="true" />
+            <element signature="e#2471#2472#0" expanded="true" />
+            <element signature="e#2503#2504#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Map/src/BSTMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="21" lean-forward="true" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+          <folding>
+            <element signature="class#Node#0;class#BSTMap#0" />
+            <element signature="e#3989#3990#0" expanded="true" />
+            <element signature="e#4459#4460#0" expanded="true" />
+            <element signature="e#4537#4538#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Java/jdk1.8.0_191/src.zip!/java/util/HashSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="458">
+          <caret line="148" column="70" lean-forward="true" selection-start-line="148" selection-start-column="70" selection-end-line="148" selection-end-column="70" />
+          <folding>
+            <element signature="e#3740#3741#0" expanded="true" />
+            <element signature="e#3777#3778#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Java/jdk1.8.0_191/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="378" column="20" selection-start-line="378" selection-start-column="20" selection-end-line="378" selection-end-column="20" />
+          <folding>
+            <element signature="e#13713#13714#0" expanded="true" />
+            <element signature="e#13768#13769#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LeetCode/src/com/solution349/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="27" lean-forward="true" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LeetCode/src/com/solution350/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="38" column="1" lean-forward="true" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LeetCode/src/com/solution350/Solution2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="22" column="36" lean-forward="true" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
