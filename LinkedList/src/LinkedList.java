@@ -179,18 +179,45 @@ public class LinkedList<E> {
 
     /**
      * 从链表中删除第一个元素，返回删除的元素
+     *
      * @return
      */
-    public E removeFirst(){
+    public E removeFirst() {
         return remove(0);
     }
 
     /**
      * 从链表中删除最后一个元素，返回删除的元素
+     *
      * @return
      */
-    public E removeLast(){
-        return remove(size-1);
+    public E removeLast() {
+        return remove(size - 1);
+    }
+
+    public void removeElementNR(E e) {
+        Node pre = dummyHead;
+        while (pre.next != null) {
+            if (e.equals(pre.next.e)) {
+                pre.next = pre.next.next;
+            }else {
+                pre = pre.next;
+            }
+        }
+    }
+
+    public void removeElement(E e) {
+        removeElement(dummyHead, e);
+    }
+
+    private void removeElement(Node pre, E e) {
+        if (pre.next == null) {
+            return;
+        }
+        if (e.equals(pre.next.e)) {
+            pre.next = pre.next.next;
+        }
+        removeElement(pre.next, e);
     }
 
     /**

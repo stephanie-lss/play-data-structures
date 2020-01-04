@@ -1,6 +1,5 @@
-import java.util.LinkedList;
+import java.util.*;
 import java.util.Queue;
-import java.util.Stack;
 
 /**
  * @author LiSheng
@@ -416,6 +415,71 @@ public class BST<E extends Comparable<E>> {
             size--;
             return predecessor;
         }
+    }
+
+    public E floor(E num) {
+        if (size == 0 || num.compareTo(minmum()) < 0) {
+            return null;
+        }
+        return floor(root, num).e;
+    }
+
+    /**
+     * 寻找以node为根的二叉搜索树中比数字num小的最大值
+     *
+     * @param node
+     * @param num
+     * @return
+     */
+    private Node floor(Node node, E num) {
+        if (node == null) {
+            return null;
+        }
+        //直接相等的话表明是节点本身
+        if (num.compareTo(node.e) == 0) {
+            return node;
+        }
+        if (num.compareTo(node.e) < 0) {
+            return floor(node.left, num);
+        }
+
+        Node tmpNode = floor(node.right, num);
+        if (tmpNode != null) {
+            return tmpNode;
+        }
+        return node;
+    }
+
+    public E ceil(E num) {
+        if (num.compareTo(maxmum()) > 0 || size == 0) {
+            return null;
+        }
+        return ceil(root, num).e;
+    }
+
+    /**
+     * 寻找以node为根的二叉搜索树中比数字num大的最小值
+     * 返回num的ceil节点
+     * @param node
+     * @param num
+     * @return
+     */
+    private Node ceil(Node node, E num) {
+        if (node == null) {
+            return null;
+        }
+        if (num.compareTo(node.e) == 0) {
+            return node;
+        }
+
+        if (num.compareTo(node.e) > 0) {
+            return ceil(node.right, num);
+        }
+        Node tmpNode = ceil(node.left,num);
+        if (tmpNode != null){
+            return tmpNode;
+        }
+        return node;
     }
 
     @Override
