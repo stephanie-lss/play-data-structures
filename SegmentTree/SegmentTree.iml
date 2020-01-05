@@ -7,7 +7,5 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="Binary-Search-Tree" />
-    <orderEntry type="module" module-name="SegmentTree" />
   </component>
 </module>

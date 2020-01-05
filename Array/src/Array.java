@@ -17,6 +17,14 @@ public class Array<E> {
         size = 0;
     }
 
+    public Array(E[] arr) {
+        data = (E[]) new Object[arr.length];
+        for (int i = 0; i < arr.length; i++) {
+            data[i] = arr[i];
+        }
+        size = arr.length;
+    }
+
     /**
      * 无参数的构造函数，默认数组的容量capacity=10
      */
@@ -96,18 +104,20 @@ public class Array<E> {
 
     /**
      * 返回数组的最后一个元素
+     *
      * @return
      */
-    public E getLast(){
+    public E getLast() {
         //return data[size-1];——这种写法当size为0时会抛出异常
-        return get(size-1);
+        return get(size - 1);
     }
 
     /**
      * 返回数组的第一个元素
+     *
      * @return
      */
-    public E getFirst(){
+    public E getFirst() {
         return get(0);
     }
 
@@ -180,11 +190,11 @@ public class Array<E> {
         }
         E ret = data[index];
         for (int i = index + 1; i < size; i++) {
-            data[i-1] = data[i];
+            data[i - 1] = data[i];
         }
         size--;
         data[size] = null;
-        if (size == data.length / 4 && data.length/2!=0) {
+        if (size == data.length / 4 && data.length / 2 != 0) {
             resize(data.length / 2);
         }
         return ret;
@@ -226,6 +236,15 @@ public class Array<E> {
             newData[i] = data[i];
         }
         data = newData;
+    }
+
+    public void swap(int index1, int index2) {
+        if (index1 < 0 || index1 >= size || index2 < 0 || index2 >= size) {
+            throw new IllegalArgumentException("Index is illegal");
+        }
+        E tmp = data[index1];
+        data[index1] = data[index2];
+        data[index2] = tmp;
     }
 
     @Override
