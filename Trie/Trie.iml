@@ -9,5 +9,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="Binary-Search-Tree" />
     <orderEntry type="module" module-name="Set" />
+    <orderEntry type="module" module-name="TestTools" />
   </component>
 </module>

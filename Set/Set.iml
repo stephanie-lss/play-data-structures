@@ -9,5 +9,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="Binary-Search-Tree" />
     <orderEntry type="module" module-name="LinkedList" />
+    <orderEntry type="module" module-name="AVLTree" />
+    <orderEntry type="module" module-name="TestTools" />
   </component>
 </module>
