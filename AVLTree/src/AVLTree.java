@@ -4,7 +4,7 @@ import java.util.ArrayList;
 /**
  * @author LiSheng
  * @date 2020/1/4 16:51
- * 优化思路，当添加或者删除节点是，该节点以及该节点的相关父节点就不需要维护平衡了
+ * 优化思路：当添加或者删除节点是，该节点以及该节点的相关父节点就不需要维护平衡了
  */
 public class AVLTree<K extends Comparable<K>, V> {
 
