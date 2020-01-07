@@ -9,21 +9,21 @@ public class Main {
     public static void main(String[] args) throws IOException {
         System.out.println("MADAME BOVARY");
         ReadFile readFile = new ReadFile();
-        String content = readFile.readFileContent("F:\\Github\\play data-structures\\TestTools\\src\\test.txt");
+        String content = readFile.readFileContent("G:\\GitHub\\data-structures\\TestTools\\src\\test.txt");
         String[] words = content.split(" ");
         Arrays.sort(words);
         // Test BST
         long startTime = System.nanoTime();
-        RBTree<String, Integer> rbTree = new RBTree<>();
+        BSTMap<String, Integer> bstMap = new BSTMap<>();
         for (String word : words) {
-            if (rbTree.contains(word)) {
-                rbTree.add(word, rbTree.get(word) + 1);
+            if (bstMap.contains(word)) {
+                bstMap.add(word, bstMap.get(word) + 1);
             } else {
-                rbTree.add(word, 1);
+                bstMap.add(word, 1);
             }
         }
         for (String word : words) {
-            rbTree.contains(word);
+            bstMap.contains(word);
         }
         long endTime = System.nanoTime();
         double time = (endTime - startTime) / 1000000000.0;
@@ -45,9 +45,22 @@ public class Main {
         endTime = System.nanoTime();
         time = (endTime - startTime) / 1000000000.0;
         System.out.println("AVL：" + time + " s.");
-        System.out.println("*********");
-        System.out.println(rbTree.getSize() + " " + avlTree.getSize());
-        System.out.println(rbTree.get("he") + " " + avlTree.get("he"));
-        System.out.println(rbTree.get("is") + " " + avlTree.get("is"));
+
+        // Test 红黑树
+        startTime = System.nanoTime();
+        RBTree<String, Integer> rbTree = new RBTree<>();
+        for (String word : words) {
+            if (rbTree.contains(word)) {
+                rbTree.add(word, rbTree.get(word) + 1);
+            } else {
+                rbTree.add(word, 1);
+            }
+        }
+        for (String word : words) {
+            rbTree.contains(word);
+        }
+        endTime = System.nanoTime();
+        time = (endTime - startTime) / 1000000000.0;
+        System.out.println("红黑树：" + time + " s.");
     }
 }

@@ -1,6 +1,11 @@
+import java.io.IOException;
+
 /**
  * @author LiSheng
  * @date 2020/1/7 9:44
+ * Title：左倾红黑树
+ * 红黑树添加和删除操作占优，查询、修改操作AVL占优，但总体统计性能红黑树占优；
+ * 添加完全随机的数据二分搜索树更好，算法复杂度较低，不会退化成链表
  */
 public class RBTree<K extends Comparable<K>, V> {
 
@@ -50,14 +55,6 @@ public class RBTree<K extends Comparable<K>, V> {
         }
         return node.color;
     }
-    //     y                        x
-    //    / \                     /   \
-    //   T1  x    向左旋转(y)     y     z
-    //      / \  ----------->  / \   / \
-    //     T2  z              T1 T2 T3 T4
-    //        / \
-    //       T3 T4
-
 
     //     node                          x
     //    /   \                        /  \
@@ -71,7 +68,7 @@ public class RBTree<K extends Comparable<K>, V> {
      * 之前相当于是2-3树中的三节点（最左侧元素为根节点，黑色或者红色），
      * 因为旋转只是一个子过程，因此旋转之后也为三节点，只是此时三节点的
      * 最左侧数字为红色（根节点的左孩子）。
-     * node.color = RED是因为子树的根节点还要继续向上融合，因此置为红
+     * node.color = RED是因为原子树的根节点node还要保持和x的三节点状态，因此置为红
      *
      * @param node
      * @return
@@ -151,6 +148,19 @@ public class RBTree<K extends Comparable<K>, V> {
         } else {
             node.value = value;
         }
+
+
+        if (isRed(node.right) && !isRed(node.left)) {
+            node = leftRotate(node);
+        }
+
+        if (isRed(node.left) && isRed(node.left.left)) {
+            node = rightRotate(node);
+        }
+        if (isRed(node.left) && isRed(node.right)) {
+            flipColors(node);
+        }
+
         return node;
     }
 
@@ -284,5 +294,33 @@ public class RBTree<K extends Comparable<K>, V> {
 
     public boolean isEmpty() {
         return size == 0;
+    }
+
+    public static void main(String[] args) throws IOException {
+        System.out.println("MADAME BOVARY");
+        ReadFile readFile = new ReadFile();
+        String content = readFile.readFileContent("G:\\GitHub\\data-structures\\TestTools\\src\\test.txt");
+        String[] words = content.split(" ");
+        // Test 红黑树
+        long startTime = System.nanoTime();
+        RBTree<String, Integer> rbTree = new RBTree<>();
+        for (String word : words) {
+            if (rbTree.contains(word)) {
+                rbTree.add(word, rbTree.get(word) + 1);
+            } else {
+                rbTree.add(word, 1);
+            }
+        }
+        for (String word : words) {
+            rbTree.contains(word);
+        }
+        long endTime = System.nanoTime();
+        double time = (endTime - startTime) / 1000000000.0;
+        System.out.println("AVL：" + time + " s.");
+        System.out.println("*********");
+        System.out.println(rbTree.getSize() + " " + rbTree.getSize());
+        System.out.println(rbTree.get("he") + " " + rbTree.get("he"));
+        System.out.println(rbTree.get("is") + " " + rbTree.get("is"));
+
     }
 }
