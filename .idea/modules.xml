@@ -5,6 +5,8 @@
       <module fileurl="file://$PROJECT_DIR$/AVLTree/AVLTree.iml" filepath="$PROJECT_DIR$/AVLTree/AVLTree.iml" />
       <module fileurl="file://$PROJECT_DIR$/Array/Array.iml" filepath="$PROJECT_DIR$/Array/Array.iml" />
       <module fileurl="file://$PROJECT_DIR$/Binary-Search-Tree/Binary-Search-Tree.iml" filepath="$PROJECT_DIR$/Binary-Search-Tree/Binary-Search-Tree.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HashCode/HashCode.iml" filepath="$PROJECT_DIR$/HashCode/HashCode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HashTable/HashTable.iml" filepath="$PROJECT_DIR$/HashTable/HashTable.iml" />
       <module fileurl="file://$PROJECT_DIR$/LeetCode/LeetCode.iml" filepath="$PROJECT_DIR$/LeetCode/LeetCode.iml" />
       <module fileurl="file://$PROJECT_DIR$/LinkedList/LinkedList.iml" filepath="$PROJECT_DIR$/LinkedList/LinkedList.iml" />
       <module fileurl="file://$PROJECT_DIR$/Map/Map.iml" filepath="$PROJECT_DIR$/Map/Map.iml" />
