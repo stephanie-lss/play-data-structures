@@ -22,7 +22,7 @@ public class Main3 {
         double time = (endTime - startTime) / 1000000000.0;
         System.out.println("AVL time：" + time + " s.");
 
-        //Test 红黑树
+        //Test 左倾红黑树
         startTime = System.nanoTime();
         RBTree<Integer, Integer> rbTree = new RBTree<>();
         for (Integer data : testData) {
@@ -30,7 +30,17 @@ public class Main3 {
         }
         endTime = System.nanoTime();
         time = (endTime - startTime) / 1000000000.0;
-        System.out.println("红黑树 time：" + time + " s.");
+        System.out.println("左倾红黑树 time：" + time + " s.");
+
+        //Test 右倾红黑树
+        startTime = System.nanoTime();
+        RightRBTree<Integer, Integer> rightRBTree = new RightRBTree<>();
+        for (Integer data : testData) {
+            rightRBTree.add(data, null);
+        }
+        endTime = System.nanoTime();
+        time = (endTime - startTime) / 1000000000.0;
+        System.out.println("右倾红黑树 time：" + time + " s.");
 
     }
 }
