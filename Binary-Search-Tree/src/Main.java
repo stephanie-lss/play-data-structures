@@ -5,6 +5,7 @@
 public class Main {
     public static void main(String[] args) {
         BST<Integer> bst = new BST<>();
+        BST<Integer> bst2 = new BST<>();
 
         /*Random random = new Random();
         int n = 1000;
@@ -50,9 +51,8 @@ public class Main {
         bst.add(37);
         bst.add(42);
         bst.add(46);
-        System.out.println(bst);
 
-        System.out.println(bst.floor(45));
-        System.out.println(bst.ceil(45));
+        bst.preOrder();
+        System.out.println(bst);
     }
 }
