@@ -7,7 +7,7 @@ import java.io.IOException;
 public class Main {
     public static void main(String[] args) throws IOException {
         ReadFile readFile = new ReadFile();
-        String content = readFile.readFileContent("F:\\Github\\play data-structures\\TestTools\\src\\test.txt");
+        String content = readFile.readFileContent("G:\\GitHub\\data-structures\\TestTools\\src\\test.txt");
         String[] words = content.split(" ");
         long startTime = System.nanoTime();
         Trie trie = new Trie();
