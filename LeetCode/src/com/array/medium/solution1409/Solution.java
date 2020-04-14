@@ -1,4 +1,4 @@
-package com.array.medium.solution5381;
+package com.array.medium.solution1409;
 
 import java.util.LinkedList;
 
