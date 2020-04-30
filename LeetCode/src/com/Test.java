@@ -1,15 +1,19 @@
 package com;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * @author LiSheng
  * @date 2020/3/29 19:02
  */
 class Test {
     public static void main(String[] args) {
-        int[] a = {4, 3, 51, 7, 2, 11};
-        quickSort(a, 0, a.length - 1);
-        for (int i : a) {
-            System.out.print(i + " ");
+        List<Integer> list = new ArrayList<>();
+        list.add(0,2);
+        list.add(1,3);
+        for (Integer integer : list) {
+            System.out.println(integer);
         }
     }
 
