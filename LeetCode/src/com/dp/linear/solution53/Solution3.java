@@ -17,7 +17,7 @@ public class Solution3 {
         if (left == right) {
             return nums[left];
         }
-        int mid = (left + right) >> 2;
+        int mid = (left + right) >> 1;
         return Math.max(Math.max(maxSubArraySum(nums, left, mid), maxSubArraySum(nums, mid + 1, right)), maxSubArraySum(nums, left, mid, right));
     }
 
