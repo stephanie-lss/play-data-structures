@@ -33,7 +33,6 @@ public class Quick {
 
     public static void main(String[] args) {
         int[] a = {312, 4, 3, 34, 5, 34, 1, 3};
-        ;
         quickSort(a, 0, a.length - 1);
         Print.print(a);
     }
