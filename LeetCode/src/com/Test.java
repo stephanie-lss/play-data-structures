@@ -1,7 +1,5 @@
 package com;
 
-import java.io.BufferedInputStream;
-import java.io.FilterInputStream;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -24,6 +22,5 @@ public class Test {
 //        countDownLatch.await();asd
         System.out.println("end");
         executorService.shutdown();
-        new BufferedInputStream();
     }
 }
