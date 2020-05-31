@@ -2,10 +2,6 @@ package com.offer.interview09;
 
 import java.util.LinkedList;
 
-/**
- * @author LiSheng
- * @date 2020/5/12 20:03
- */
 class CQueue {
 
     LinkedList<Integer> stack1;
