@@ -4,13 +4,6 @@ package com.solution1095;
  * @author LiSheng
  * @date 2020/4/29 9:01
  */
-
-interface MountainArray {
-    public int get(int index);
-
-    public int length();
-}
-
 class Solution {
     public int findInMountainArray(int target, MountainArray mountainArr) {
         int n = mountainArr.length();
