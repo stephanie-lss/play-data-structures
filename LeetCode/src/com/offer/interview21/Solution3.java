@@ -28,8 +28,10 @@ class Solution3 {
     }
 
     public static void main(String[] args) {
-        int[] nums = {1, 3, 5};
+        int[] nums = {2,4,6};
         int[] res = new Solution3().exchange(nums);
-
+        for (int re : res) {
+            System.out.println(re);
+        }
     }
 }
