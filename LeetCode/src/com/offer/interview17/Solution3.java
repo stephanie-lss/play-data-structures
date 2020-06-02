@@ -6,42 +6,38 @@ package com.offer.interview17;
  */
 public class Solution3 {
     public void printNumbers(int n) {
-        StringBuilder str = new StringBuilder();
-        // 将str初始化为n个'0'字符组成的字符串
+        StringBuilder sb = new StringBuilder();
         for (int i = 0; i < n; i++) {
-            str.append('0');
+            sb.append('0');
         }
-        while (!increment(str)) {
-            // 去掉左侧的0
-            int index = 0;
-            while (index < str.length() && str.charAt(index) == '0') {
-                index++;
+        while (!increment(sb)) {
+            int idx = 0;
+            while (sb.charAt(idx) == '0'){
+                idx++;
             }
-            System.out.println(str.toString().substring(index));
+            System.out.println(sb.substring(idx));
         }
     }
 
-    public boolean increment(StringBuilder str) {
-        boolean isOverflow = false;
-        for (int i = str.length() - 1; i >= 0; i--) {
-            char s = (char) (str.charAt(i) + 1);
-            // 如果s大于'9'则发生进位
-            if (s > '9') {
-                str.replace(i, i + 1, "0");
+    private boolean increment(StringBuilder sb) {
+        boolean isOver = false;
+        for (int i = sb.length() - 1; i >= 0; i--) {
+            char c = (char) (sb.charAt(i) + 1);
+            if (c > '9') {
+                sb.replace(i, i + 1, "0");
                 if (i == 0) {
-                    isOverflow = true;
+                    isOver = true;
                 }
-            }
-            // 没发生进位则跳出for循环
-            else {
-                str.replace(i, i + 1, String.valueOf(s));
+            } else {
+                sb.replace(i, i + 1, String.valueOf(c));
                 break;
             }
         }
-        return isOverflow;
+        return isOver;
     }
 
+
     public static void main(String[] args) {
-        new Solution3().printNumbers(2);
+        new Solution3().printNumbers(3);
     }
 }
