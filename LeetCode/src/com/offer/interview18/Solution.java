@@ -1,4 +1,4 @@
-package com.offer.solution18;
+package com.offer.interview18;
 
 import com.ListNode;
 

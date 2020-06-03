@@ -57,7 +57,7 @@ class Solution {
     }
 
     public static void main(String[] args) {
-        int[] nums = {2, 16, 3, 5, 13, 1, 16, 1, 12, 18, 11, 8, 11, 11, 5, 1};
+        int[] nums = {1,2,6,4};
         new Solution().exchange(nums);
         for (int num : nums) {
             System.out.print(num + " ");
