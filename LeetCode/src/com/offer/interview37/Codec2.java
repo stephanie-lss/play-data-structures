@@ -8,44 +8,43 @@ import java.util.LinkedList;
 
 /**
  * @author LiSheng
- * @date 2020/5/23 15:41
+ * @date 2020/6/6 10:54
  */
-public class Codec {
+public class Codec2 {
+
     // Encodes a tree to a single string.
     public String serialize(TreeNode root) {
         if (root == null) {
             return "#";
         }
-        return root.val +
-                "," + serialize(root.left) +
-                "," + serialize(root.right);
+        return root.val + "," + serialize(root.left) + "," + serialize(root.right);
     }
 
     // Decodes your encoded data to tree.
     public TreeNode deserialize(String data) {
-        if (data == null) {
+        if ("".equals(data)) {
             return null;
         }
         String[] strings = data.split(",");
         LinkedList<String> list = new LinkedList<>(Arrays.asList(strings));
-        return reSerialize(list);
+        return helper(list);
     }
 
-    private TreeNode reSerialize(LinkedList<String> list) {
+    private TreeNode helper(LinkedList<String> list) {
         if ("#".equals(list.getFirst())) {
             list.removeFirst();
             return null;
         }
-        String str = list.removeFirst();
-        TreeNode root = new TreeNode(Integer.valueOf(str));
-        root.left = reSerialize(list);
-        root.right = reSerialize(list);
+        String s = list.removeFirst();
+        TreeNode root = new TreeNode(Integer.valueOf(s));
+        root.left = helper(list);
+        root.right = helper(list);
         return root;
     }
 
     public static void main(String[] args) {
         Integer[] nums = {1, 2, 3, null, null, 4, 5};
-        TreeNode tree = ConstructTree.constructTree(nums);
-        System.out.println(new Codec2().serialize(tree));
+        TreeNode root = ConstructTree.constructTree(nums);
+        System.out.println(new Codec2().serialize(root));
     }
 }

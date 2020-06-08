@@ -35,10 +35,6 @@ class Solution3 {
             }
         }
 
-        public int getSize() {
-            return parent.size();
-        }
-
         //返回节点p的根节点
         private int find(int p) {
             if (parent.get(p) != p) {
