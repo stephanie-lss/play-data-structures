@@ -40,6 +40,6 @@ class Solution {
     }
 
     public static void main(String[] args) {
-        System.out.println(new Solution().findNthDigit(1000000000));
+        System.out.println(new Solution().findNthDigit(11));
     }
 }
