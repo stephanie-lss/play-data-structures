@@ -1,4 +1,4 @@
-package com.offer.intervirew46;
+package com.offer.interview46;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -8,28 +8,24 @@ import java.util.Set;
  * @date 2020/5/19 10:02
  */
 class Solution {
-    private int res = 0;
     private Set<String> set;
 
     public int translateNum(int num) {
         set = new HashSet<>();
-        String s = String.valueOf(num);
-        dfs(s, 0, new StringBuilder());
-        return res;
+        dfs(String.valueOf(num), 0, new StringBuilder());
+        return set.size();
     }
 
     private void dfs(String s, int i, StringBuilder sb) {
         if (i >= s.length()) {
-            if (!set.contains(sb.toString())) {
-                res++;
-                set.add(sb.toString());
-            }
+            set.add(sb.toString());
             return;
         }
 
         for (int j = 1; j <= 2; j++) {
             String str = (i + j) >= s.length() ? s.substring(i) : s.substring(i, i + j);
-            if (Integer.valueOf(str) >= 0 && Integer.valueOf(str) <= 25) {
+            if (str.compareTo("0") >= 0 && str.compareTo("25") <= 0) {
+                System.out.println(str);
                 if (str.length() == 2 && str.charAt(0) == '0') {
                     return;
                 }
@@ -40,5 +36,9 @@ class Solution {
                 return;
             }
         }
+    }
+
+    public static void main(String[] args) {
+        System.out.println(new Solution().translateNum(12258));
     }
 }

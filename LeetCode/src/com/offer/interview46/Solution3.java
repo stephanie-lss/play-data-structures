@@ -1,4 +1,4 @@
-package com.offer.intervirew46;
+package com.offer.interview46;
 
 /**
  * @author LiSheng

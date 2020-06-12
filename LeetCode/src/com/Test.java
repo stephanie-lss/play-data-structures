@@ -6,16 +6,8 @@ package com;
  */
 public class Test {
     public static void main(String[] args) throws InterruptedException {
-        int[] nums = {1,2,3,4,5,6};
-        ListNode head = new ListNode(nums);
-        ListNode cur = head;
-        cur = cur.next;
-        ListNode newNode = new ListNode(-1);
-        newNode.next = head.next.next;
-        head.next.next = newNode;
-        System.out.println(head.next == cur);
-        System.out.println(head.next.equals(cur));
-        System.out.println("head:"+head);
-        System.out.println("cur:"+cur);
+        String str = "9";
+        System.out.println(str.compareTo("999") <= 0);
+        System.out.println(Integer.valueOf(str) >= 0 && Integer.valueOf(str) <= 25);
     }
 }
