@@ -1,4 +1,4 @@
-package com.offer.intervire38;
+package com.offer.interview38;
 
 import java.util.HashSet;
 import java.util.Set;

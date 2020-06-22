@@ -5,33 +5,42 @@ import java.util.Set;
 
 /**
  * @author LiSheng
- * @date 2020/6/6 11:39
+ * @date 2020/5/18 21:30
  */
-public class Solution {
-    private Set<String> set;
+class Solution {
+
+    private Set<String> res;
     private boolean[] visited;
 
     public String[] permutation(String s) {
-        char[] array = s.toCharArray();
-        set = new HashSet<>();
-        visited = new boolean[array.length];
-        dfs(array, 0, new StringBuilder());
-        return set.toArray(new String[0]);
+        res = new HashSet<>();
+        visited = new boolean[s.length()];
+        permute(s, 0, new StringBuilder());
+        return res.toArray(new String[0]);
     }
 
-    private void dfs(char[] array, int i, StringBuilder sb) {
-        if (i == array.length) {
-            set.add(sb.toString());
+    private void permute(String s, int index, StringBuilder sb) {
+        if (index == s.length()) {
+            res.add(sb.toString());
             return;
         }
-        for (int j = 0; j < array.length; j++) {
-            if (!visited[j]) {
-                visited[j] = true;
-                sb.append(array[j]);
-                dfs(array, i + 1, sb);
+
+        for (int i = 0; i < s.length(); i++) {
+            if (!visited[i]) {
+                visited[i] = true;
+                sb.append(s.charAt(i));
+                permute(s, index + 1, sb);
                 sb.deleteCharAt(sb.length() - 1);
-                visited[j] = false;
+                visited[i] = false;
             }
+        }
+    }
+
+    public static void main(String[] args) {
+        String str = "aab";
+        String[] strings = new Solution().permutation(str);
+        for (String string : strings) {
+            System.out.print(string + " ");
         }
     }
 }
