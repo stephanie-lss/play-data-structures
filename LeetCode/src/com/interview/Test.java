@@ -6,6 +6,6 @@ package com.interview;
  */
 public class Test {
     public static void main(String[] args) {
-        System.out.println('b' ^ 'a' ^ 'b' ^ 0 ^ 'a');
+        System.out.println(Math.abs(0.22));
     }
 }
