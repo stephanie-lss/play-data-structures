@@ -242,7 +242,7 @@ public class BST<E extends Comparable<E>> {
      * @param e
      */
     private Node add(Node node, E e) {
-        /*if (node.e.equals(e)) {
+/*        if (node.e.equals(e)) {
             return;
         } else if (e.compareTo(node.e) < 0 && node.left == null) {
             node.left = new Node(e);

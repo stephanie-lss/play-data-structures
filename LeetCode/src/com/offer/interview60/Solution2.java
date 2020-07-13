@@ -5,9 +5,9 @@ package com.offer.interview60;
  * @date 2020/5/17 20:54
  */
 class Solution2 {
-
-    public double[] twoSum(int n) {
+    public static double[] twoSum(int n) {
         //dp[i][j]为当骰子数为i，和为j的情况数量。
+
         int[][] dp = new int[n + 1][n * 6 + 1];
         //base case—— 一个骰子时
         for (int i = 1; i <= 6; i++) {

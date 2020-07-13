@@ -149,7 +149,7 @@ public class RBTree<K extends Comparable<K>, V> {
             node.value = value;
         }
 
-
+        //颜色调整
         if (isRed(node.right) && !isRed(node.left)) {
             node = leftRotate(node);
         }

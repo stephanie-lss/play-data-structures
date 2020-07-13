@@ -25,7 +25,6 @@ public class Solution {
 
         //删除倒数第n个节点
         p.next = p.next.next;
-
         return dummyHead.next;
     }
 

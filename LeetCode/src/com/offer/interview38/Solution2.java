@@ -1,7 +1,7 @@
 package com.offer.interview38;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @author LiSheng
@@ -9,11 +9,11 @@ import java.util.Set;
  */
 class Solution2 {
 
-    private Set<String> res;
+    private List<String> res;
 
     public String[] permutation(String s) {
         char[] a = s.toCharArray();
-        res = new HashSet<>();
+        res = new ArrayList<>();
         permute(a, 0);
         return res.toArray(new String[0]);
     }
@@ -24,10 +24,7 @@ class Solution2 {
             return;
         }
 
-        for (int i = 0; i < s.length; i++) {
-            if (res.contains(new String(s))) {
-                continue;
-            }
+        for (int i = index; i < s.length; i++) {
             swap(s, index, i);
             permute(s, index + 1);
             swap(s, index, i);
@@ -41,7 +38,7 @@ class Solution2 {
     }
 
     public static void main(String[] args) {
-        String str = "dkjphedy";
+        String str = "abc";
         String[] strings = new Solution2().permutation(str);
         for (String string : strings) {
             System.out.print(string + " ");

@@ -34,6 +34,6 @@ class Solution2 {
         TreeNode A = ConstructTree.constructTree(nums);
         Integer[] nums2 = {4, 8, 9};
         TreeNode B = ConstructTree.constructTree(nums2);
-        System.out.println(new Solution2().isSubStructure(A, B));
+        System.out.println(new Solution2().isSubStructure(A, null));
     }
 }

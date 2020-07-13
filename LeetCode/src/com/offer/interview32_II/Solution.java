@@ -11,6 +11,7 @@ import java.util.List;
  */
 public class Solution {
     List<List<Integer>> res = new ArrayList<>();
+
     public List<List<Integer>> levelOrder(TreeNode root) {
         if (root == null) {
             return res;
@@ -30,5 +31,17 @@ public class Solution {
         if (root.right != null) {
             dfs(root.right, index + 1);
         }
+    }
+
+    public static void main(String[] args) {
+        String s1 = "li";
+        String s2 = "li";
+        Integer n1 = 128;
+        Integer n2 = 128;
+        System.out.println(s1 == s2);
+        System.out.println(s1.equals(s2));
+
+        System.out.println(n1 == n2);
+        System.out.println(n1.equals(n2));
     }
 }
