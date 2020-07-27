@@ -25,7 +25,6 @@ class Solution {
         for (int j = 1; j <= 2; j++) {
             String str = (i + j) >= s.length() ? s.substring(i) : s.substring(i, i + j);
             if (str.compareTo("0") >= 0 && str.compareTo("25") <= 0) {
-                System.out.println(str);
                 if (str.length() == 2 && str.charAt(0) == '0') {
                     return;
                 }

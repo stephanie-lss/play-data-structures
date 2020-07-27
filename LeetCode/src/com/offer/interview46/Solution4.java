@@ -1,5 +1,6 @@
 package com.offer.interview46;
 
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -36,6 +37,6 @@ class Solution4 {
     }
 
     public static void main(String[] args) {
-        System.out.println(new Solution4().translateNum(506));
+        System.out.println(new Solution4().translateNum(12258));
     }
 }
