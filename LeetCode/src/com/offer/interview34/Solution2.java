@@ -3,9 +3,7 @@ package com.offer.interview34;
 import com.TreeNode;
 import com.tree.ConstructTree;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 /**
  * @author LiSheng

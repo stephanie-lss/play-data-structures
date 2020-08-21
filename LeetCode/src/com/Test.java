@@ -1,30 +1,15 @@
 package com;
 
 public class Test {
-    public Test() {
-        System.out.print("默认构造方法！--");
-    }
-
-    //非静态代码块
-    {
-        System.out.print("非静态代码块！--");
-    }
-
-    //静态代码块
-    static {
-        System.out.print("静态代码块！--");
-    }
-
-    private static void test() {
-        System.out.print("静态方法中的内容! --");
-        {
-            System.out.print("静态方法中的代码块！--");
-        }
-
-    }
 
     public static void main(String[] args) {
-        Test test = new Test();
-//        Test.test();//静态代码块！--静态方法中的内容! --静态方法中的代码块！--
+        String s1 = new String("计算机");
+        String s4 = s1.intern();
+        String s2 = "计算机";
+        String s3 = s1.intern();
+        System.out.println(s2);//计算机
+        System.out.println(s1 == s2);//false，因为一个是堆内存中的 String 对象一个是常量池中的 String 对象，
+        System.out.println(s3 == s2);//true，因为两个都是常量池中的 String 对象
+
     }
 }

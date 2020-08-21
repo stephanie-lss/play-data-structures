@@ -16,4 +16,8 @@ class Solution {
         root.left = mirrorTree(tmp);
         return root;
     }
+
+    public static void main(String[] args) {
+
+    }
 }
