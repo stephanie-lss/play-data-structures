@@ -3,7 +3,7 @@
  * @date 2020/1/4 20:28
  */
 public class MaxHeap<E extends Comparable<E>> {
-    private Array<E> data;
+    public Array<E> data;
 
     public MaxHeap(int capacity) {
         data = new Array<>(capacity);
@@ -107,7 +107,7 @@ public class MaxHeap<E extends Comparable<E>> {
             if (j + 1 < data.getSize() && data.get(j + 1).compareTo(data.get(j)) > 0) {
                 j = rightChild(k);
             }
-            if (data.get(k).compareTo(data.get(j)) > 0) {
+            if (data.get(k).compareTo(data.get(j)) >= 0) {
                 break;
             } else {
                 data.swap(k, j);
